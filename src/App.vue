@@ -22,5 +22,15 @@ useHead({
 </script>
 
 <template>
-  <RouterView />
+  <v-app id="app">
+    <v-app-bar color="primary">
+      <v-app-bar-nav-icon />
+      <v-toolbar-title>Vuetify</v-toolbar-title>
+      <v-spacer />
+      <toolbar-language />
+    </v-app-bar>
+    <v-main>
+      <RouterView />
+    </v-main>
+  </v-app>
 </template>

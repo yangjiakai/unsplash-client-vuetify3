@@ -47,6 +47,11 @@ const { t } = useI18n()
         {{ t('button.go') }}
       </button>
     </div>
+    <div>
+      <v-btn color="success">
+        text
+      </v-btn>
+    </div>
   </div>
 </template>
 

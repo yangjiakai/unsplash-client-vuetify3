@@ -1,0 +1,56 @@
+@import './markdown.scss';
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html.dark {
+  background: #121212;
+  color-scheme: dark;
+}
+
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: rgb(13, 148, 136);
+  opacity: 0.75;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+
+.v-table {
+  table {
+    padding: 4px;
+    padding-bottom: 8px;
+
+    th {
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    td {
+      border-bottom: 0 !important;
+    }
+
+    tbody {
+      tr {
+        transition: box-shadow 0.2s, transform 0.2s;
+
+        &:not(.v-data-table__selected):hover {
+          box-shadow: 0 3px 15px -2px rgba(0, 0, 0, 0.12);
+          transform: translateY(-4px);
+        }
+      }
+    }
+  }
+}
